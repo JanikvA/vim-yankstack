@@ -10,7 +10,7 @@ let g:yankstack_size = 30
 let s:last_paste = { 'changedtick': -1, 'key': '', 'mode': 'n', 'count': 1, 'register': '' }
 
 if !exists('g:yankstack_yank_keys')
-  let g:yankstack_yank_keys = ['c', 'C', 'd', 'D', 's', 'S', 'x', 'X', 'y', 'Y']
+  let g:yankstack_yank_keys = ['c', 'C', 'd', 'D', 's','x', 'X', 'y', 'Y'] "Removed S due to the tpop surround plugin
 endif
 
 function! s:yank_with_key(key)
